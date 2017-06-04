@@ -34,3 +34,20 @@ function clear () {
   this.top = 0;
   this.dataStore = [];
 }
+
+//test program
+var s = new Stack();
+s.push("David");
+s.push("Mary");
+s.push("Clement");
+s.push("Joseph");
+s.push("Lomolo");
+s.push("Edwin");
+s.push("Moses");
+
+console.log(s.length());
+
+console.log(s.peek());
+
+var popped = s.pop();
+console.log(popped);
