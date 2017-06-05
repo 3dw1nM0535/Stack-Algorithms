@@ -71,3 +71,24 @@ var num = 32;
 var base = 2;
 var newNum = mulBase(num, base);
 console.log(num + " to base " + base + " is " + newNum);
+
+//stack application in palindrome algorithms
+function isPalindrome(word) {
+  var s = new Stack();
+  for (var i = 0; i < word.length; i++) {
+    s.push(word[i]);
+  }
+  var revWord = "";
+  while(s.length() > 0) {
+    revWord += s.pop();
+  }
+  if(revWord == word) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//test proram for isPalindrome()
+var word = "racecar";
+console.log(isPalindrome(word));
