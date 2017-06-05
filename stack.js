@@ -92,3 +92,20 @@ function isPalindrome(word) {
 //test proram for isPalindrome()
 var word = "racecar";
 console.log(isPalindrome(word));
+
+//recursion implementation using stack
+function fact(n) {
+  var s = new Stack();
+  while(n > 1) {
+    s.push(n--);
+  }
+  var product = 1;
+  while(s.length() > 0) {
+    product *= s.pop();
+  }
+  return product;
+}
+
+//recursion test data
+var num = 10;
+console.log(fact(num));
