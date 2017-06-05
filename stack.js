@@ -51,3 +51,23 @@ console.log(s.peek());
 
 var popped = s.pop();
 console.log(popped);
+
+//Stack algorithm application in number convertion to base 2 through 9
+function mulBase(num, base) {
+  var s = new Stack();
+  do {
+    s.push(num% base);
+    num = Math.floor(num /= base);
+  } while(num > 0);
+  var converted = "";
+  while(s.length() > 0) {
+    converted += s.pop();
+  }
+  return converted;
+}
+
+//test program
+var num = 32; 
+var base = 2;
+var newNum = mulBase(num, base);
+console.log(num + " to base " + base + " is " + newNum);
