@@ -16,7 +16,7 @@ function push(element) {
 
 //pop() return the element at the top of the stack and decrement the top variable
 function pop() {
-  return this.dataStore[--this.top]
+  return this.dataStore[--this.top];
 }
 
 //peek() peek at the top element in the stack
@@ -25,7 +25,7 @@ function peek() {
 }
 
 //length() returns the length of the stack element
-function length() { 
+function length() {
   return this.top;
 }
 
@@ -67,7 +67,7 @@ function mulBase(num, base) {
 }
 
 //test program
-var num = 32; 
+var num = 32;
 var base = 2;
 var newNum = mulBase(num, base);
 console.log(num + " to base " + base + " is " + newNum);
@@ -108,4 +108,4 @@ function fact(n) {
 
 //recursion test data
 var num = 10;
-console.log(fact(num));
+console.log(fact(num));~
