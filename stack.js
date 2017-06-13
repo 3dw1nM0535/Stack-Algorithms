@@ -108,4 +108,6 @@ function fact(n) {
 
 //recursion test data
 var num = 10;
-console.log(fact(num));~
+console.log(fact(num));
+
+
